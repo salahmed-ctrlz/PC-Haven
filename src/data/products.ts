@@ -1,3 +1,28 @@
+import rtx4080 from "@/assets/images/RTX 4080 Super Graphics Card.jpg";
+import i9Processor from "@/assets/images/Intel Core i9-13900K Processor.jpg";
+import ddr5Ram from "@/assets/images/32GB DDR5 RAM Kit (2x16GB).jpg";
+import nvmeSsd from "@/assets/images/2TB NVMe SSD M.2.jpg";
+import motherboard from "@/assets/images/Z790 Gaming Motherboard.jpg";
+import powerSupply from "@/assets/images/850W Platinum Power Supply.jpg";
+import keyboard from "@/assets/images/RGB Gaming Keyboard Mechanical.jpg";
+import liquidCooler from "@/assets/images/360mm Liquid CPU Cooler.jpg";
+
+import graphicsCards from "@/assets/images/graphics cards.png";
+import processors from "@/assets/images/processors.png";
+import memory from "@/assets/images/memory.png";
+import storage from "@/assets/images/storage.png";
+import motherboards from "@/assets/images/motherboards.png";
+import powerSupplies from "@/assets/images/power supplies.png";
+import peripherals from "@/assets/images/peripherals.png";
+import cooling from "@/assets/images/cooling.png";
+
+import nvidia from "@/assets/images/nvidia.png";
+import amd from "@/assets/images/amd.png";
+import intel from "@/assets/images/intel.png";
+import asus from "@/assets/images/asus.png";
+import msi from "@/assets/images/msi.png";
+import corsair from "@/assets/images/corsair.png";
+
 export type Product = {
   id: number;
   name: string;
@@ -16,8 +41,8 @@ export const products: Product[] = [
     name: "RTX 4080 Super Graphics Card",
     category: "Graphics Cards",
     price: 999.99,
-    image: "/PC-Haven/images/RTX 4080 Super Graphics Card.jpg",
-    description: "The latest graphics card with ray tracing capabilities and 16GB of GDDR6X memory for ultimate gaming performance.",
+    image: rtx4080,
+    description: "Ray tracing, 16GB GDDR6X memory.",
     featured: true,
     stock: 15,
     rating: 4.8
@@ -27,8 +52,8 @@ export const products: Product[] = [
     name: "Intel Core i9-13900K Processor",
     category: "Processors",
     price: 599.99,
-    image: "/PC-Haven/images/Intel Core i9-13900K Processor.jpg",
-    description: "24-core processor (8 P-cores, 16 E-cores) with up to 5.8GHz turbo frequency for extreme multitasking and gaming.",
+    image: i9Processor,
+    description: "24-core processor, 5.8GHz turbo.",
     featured: true,
     stock: 20,
     rating: 4.9
@@ -38,8 +63,8 @@ export const products: Product[] = [
     name: "32GB DDR5 RAM Kit (2x16GB)",
     category: "Memory",
     price: 249.99,
-    image: "/PC-Haven/images/32GB DDR5 RAM Kit (2x16GB).jpg",
-    description: "Blazing fast DDR5 memory kit with RGB lighting and aluminum heat spreaders for superior cooling.",
+    image: ddr5Ram,
+    description: "Blazing fast DDR5 memory with RGB.",
     featured: false,
     stock: 30,
     rating: 4.7
@@ -49,8 +74,8 @@ export const products: Product[] = [
     name: "2TB NVMe SSD M.2",
     category: "Storage",
     price: 199.99,
-    image: "/PC-Haven/images/2TB NVMe SSD M.2.jpg",
-    description: "Ultra-fast NVMe SSD with read speeds up to 7000MB/s and write speeds up to 5500MB/s.",
+    image: nvmeSsd,
+    description: "Ultra-fast NVMe SSD with 7000MB/s read speed.",
     featured: true,
     stock: 25,
     rating: 4.8
@@ -60,8 +85,8 @@ export const products: Product[] = [
     name: "Z790 Gaming Motherboard",
     category: "Motherboards",
     price: 349.99,
-    image: "/PC-Haven/images/Z790 Gaming Motherboard.jpg",
-    description: "Feature-rich gaming motherboard with PCIe 5.0, WiFi 6E, and support for the latest Intel processors.",
+    image: motherboard,
+    description: "PCIe 5.0, WiFi 6E, Intel support.",
     featured: true,
     stock: 10,
     rating: 4.6
@@ -71,8 +96,8 @@ export const products: Product[] = [
     name: "850W Platinum Power Supply",
     category: "Power Supplies",
     price: 159.99,
-    image: "/PC-Haven/images/850W Platinum Power Supply.jpg",
-    description: "Fully modular power supply with 80 Plus Platinum certification for efficient power delivery.",
+    image: powerSupply,
+    description: "Fully modular, 80 Plus Platinum certified.",
     featured: false,
     stock: 12,
     rating: 4.7
@@ -82,8 +107,8 @@ export const products: Product[] = [
     name: "RGB Gaming Keyboard Mechanical",
     category: "Peripherals",
     price: 129.99,
-    image: "/PC-Haven/images/RGB Gaming Keyboard Mechanical.jpg",
-    description: "Mechanical gaming keyboard with per-key RGB lighting and N-key rollover for gaming perfection.",
+    image: keyboard,
+    description: "Per-key RGB lighting, N-key rollover.",
     featured: true,
     stock: 35,
     rating: 4.5
@@ -93,8 +118,8 @@ export const products: Product[] = [
     name: "360mm Liquid CPU Cooler",
     category: "Cooling",
     price: 179.99,
-    image: "/PC-Haven/images/360mm Liquid CPU Cooler.jpg",
-    description: "Triple radiator liquid cooler with RGB fans and pump for maximum cooling performance.",
+    image: liquidCooler,
+    description: "Triple radiator, RGB fans, max cooling.",
     featured: false,
     stock: 8,
     rating: 4.8
@@ -102,21 +127,21 @@ export const products: Product[] = [
 ];
 
 export const categories = [
-  { id: 1, name: "Graphics Cards", image: "/PC-Haven/images/graphics cards.png" },
-  { id: 2, name: "Processors", image: "/PC-Haven/images/processors.png" },
-  { id: 3, name: "Memory", image: "/PC-Haven/images/memory.png" },
-  { id: 4, name: "Storage", image: "/PC-Haven/images/storage.png" },
-  { id: 5, name: "Motherboards", image: "/PC-Haven/images/motherboards.png" },
-  { id: 6, name: "Power Supplies", image: "/PC-Haven/images/power supplies.png" },
-  { id: 7, name: "Peripherals", image: "/PC-Haven/images/peripherals.png" },
-  { id: 8, name: "Cooling", image: "/PC-Haven/images/cooling.png" }
+  { id: 1, name: "Graphics Cards", image: graphicsCards },
+  { id: 2, name: "Processors", image: processors },
+  { id: 3, name: "Memory", image: memory },
+  { id: 4, name: "Storage", image: storage },
+  { id: 5, name: "Motherboards", image: motherboards },
+  { id: 6, name: "Power Supplies", image: powerSupplies },
+  { id: 7, name: "Peripherals", image: peripherals },
+  { id: 8, name: "Cooling", image: cooling }
 ];
 
 export const partners = [
-  { id: 1, name: "NVIDIA", image: "/PC-Haven/images/nvidia.png" },
-  { id: 2, name: "AMD", image: "/PC-Haven/images/amd.png" },
-  { id: 3, name: "Intel", image: "/PC-Haven/images/intel.png" },
-  { id: 4, name: "ASUS", image: "/PC-Haven/images/asus.png" },
-  { id: 5, name: "MSI", image: "/PC-Haven/images/msi.png" },
-  { id: 6, name: "Corsair", image: "/PC-Haven/images/corsair.png" }
+  { id: 1, name: "NVIDIA", image: nvidia },
+  { id: 2, name: "AMD", image: amd },
+  { id: 3, name: "Intel", image: intel },
+  { id: 4, name: "ASUS", image: asus },
+  { id: 5, name: "MSI", image: msi },
+  { id: 6, name: "Corsair", image: corsair }
 ];

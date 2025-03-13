@@ -1,7 +1,7 @@
-
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import aboutPoster from "@/assets/images/AboutPoster.png"; // Import the image
 
 const About = () => {
   return (
@@ -13,8 +13,9 @@ const About = () => {
             <h1 className="text-4xl font-bold mb-8 text-center">About PC Parts Haven</h1>
             
             <div className="mb-12">
+              {/* Use imported image */}
               <img 
-                src="public/images/AboutPoster.png" 
+                src={aboutPoster} 
                 alt="Our Team" 
                 className="rounded-lg w-full h-auto mb-6"
               />
