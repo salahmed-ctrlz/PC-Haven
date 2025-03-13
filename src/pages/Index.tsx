@@ -102,7 +102,7 @@ const Index = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="public/images/AboutPoster.png" 
+                  src="../public/images/AboutPoster.png" 
                   alt="About PC Parts Haven" 
                   className="w-full h-auto"
                 />
